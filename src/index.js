@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const path = require ('path');
 
-//const puerto = procces.env.PORT || 3000;
+//const puerto = process.env.PORT || 3000;
 
 //settings
-app.set('port', procces.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
