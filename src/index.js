@@ -4,6 +4,7 @@ const path = require ('path');
 
 //const puerto = process.env.PORT || 3000;
 
+//heroku no me permite darle el puerto 3000
 //settings
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
