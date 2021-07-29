@@ -4,7 +4,7 @@ const path = require ('path');
 
 //const puerto = process.env.PORT || 3000;
 
-//heroku no me permite darle el puerto 3000
+//heroku no me permite darle el puerto 3000git 
 //settings
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //listening the server
-app.listen(app.get('port'), () => {
-console.log('Servidor en puerto ', app.get('port'));
-});
+app.listen(app.get('port', () => {
+    console.log('Servidor en puerto ', app.get('port'));
+}));
+
